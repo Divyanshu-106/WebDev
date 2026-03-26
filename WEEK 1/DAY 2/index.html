@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY-2 Forms + Validation</title>
+</head>
+<body>
+    <header>Contact Us</header>
+    <form action="sumit-form" method="post">
+        <fieldset>
+            <p>
+      <label for="name">Full Name:</label>
+      <input 
+        type="text" 
+        id="name" 
+        name="user_name" 
+        placeholder="Your Name" 
+        required
+      >
+    </p>
+      <p>
+      <label for="email">Email Address:</label>
+      <input 
+        type="email" 
+        id="email" 
+        name="useremail" 
+        placeholder="name@example.com"
+        title="Please enter a valid email address (e.g., name@domain.com)"
+        required
+      >
+    </p>
+
+    <p>
+      <label for="phone">Phone Number:</label>
+      <input 
+        type="tele" 
+        id="phone" 
+        name="userphone" 
+        placeholder="9999988888"
+        title="Format: "9999988888"
+      >
+    </p>
+
+    <p>
+      <label for="message">Message:</label><br>
+      <textarea 
+        id="message" 
+        name="user_message" 
+        rows="5" 
+      ></textarea>
+    </p>
+
+    <button type="submit">Send Message</button>
+        </fieldset>
+    </form>
+</body>
+</html>
